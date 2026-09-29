@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - GreenLoop</title>
+  <link rel="stylesheet" href="../styles/dashboard.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo"><img src="../Assets/leaf icon.png" alt="leaf">Green<span>Loop</span></div>
+    <div class="nav-links">
+      <a href="browse.html">Browse & Match</a>
+      <a href="impact.html">Impact Stats</a>
+      <a href="#" id="logout-link">Log out </a>
+    </div>
+  </nav>
+
+  <main class="dashboard-wrap">
+    <h1 id="greeting">Welcome</h1>
+
+    <button id="post-btn" class="btn btn-primary"></button>
+
+    <section class="dashboard-section">
+      <h2 id="my-listings-title">My Listings</h2>
+      <div id="my-listings" class="card-list">
+        <p class="empty-state">You haven't posted anything yet.</p>
+      </div>
+    </section>
+
+    <section class="dashboard-section">
+      <h2>Matched</h2>
+      <div id="matched-listings" class="card-list">
+        <p class="empty-state">No matches yet.</p>
+      </div>
+    </section>
+
+    <section class="dashboard-section stats-section">
+      <h2>Your impact</h2>
+      <p><span id="completed-stat">0</span> listing(s) completed out of <span id="total-stat">0</span> posted</p>
+    </section>
+  </main>
+
+  <script src="../scripts/data.js"></script>
+  <script src="../scripts/dashboard.js"></script>
+</body>
+</html>

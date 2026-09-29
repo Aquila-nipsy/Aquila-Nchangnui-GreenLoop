@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenLoop</title>
+  <link rel="stylesheet" href="styles/home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo"><img src="Assets/leaf icon.png" alt="leaf">Green<span>Loop</span></div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#how-it-works">How it works</a>
+      <a class="btn btn-primary btn-small" href="pages/signup.html">Sign up</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+   <div class="hero-text"> 
+    <h1>Turn waste into something worth growing</h1>
+    <p class="tagline">GreenLoop connects households and market vendors who have organic waste with farmers nearby who need it for compost, so nothing useful goes to a dump.</p>
+
+    <div class="cta-group">
+      <a class="btn btn-primary" href="pages/signup.html?role=provider">I Have Waste to Give</a>
+      <a class="btn btn-secondary" href="pages/signup.html?role=farmer">I Need Compost</a>
+    </div>
+    </div>
+    <div class="hero-image"><img src="Assets/image.png" alt="Exchange illustration"></div>
+  </header>
+
+  <section id="about" class="about">
+    <h2>Why GreenLoop exists</h2>
+    <p>Most of the solid waste produced around Bamenda every day is organic, vegetable peels, food scraps, market refuse. At the same time, farmers nearby often can't easily get affordable compost. Those two problems sit right next to each other, but nothing connects them. GreenLoop is that connection: a simple way for people to find each other by quarter, instead of relying on chance.</p>
+    <div class="abt-imgs">
+        <div class="abt-img"><img src="Assets/farmer.jpg" alt="About Image 1"></div>
+        <div class="abt-img"><img src="Assets/wate.webp" alt="About Image 2"></div>
+    </div>
+</section>
+
+  <section id="how-it-works" class="how-it-works">
+    <h2>How it works</h2>
+    <div class="steps">
+      <div class="step">
+        <h3>Post <i class="fas fa-upload"></i></h3>
+        <p>A provider lists waste they have. A farmer lists what they need. Both take less than a minute.</p>
+      </div>
+      <div class="step">
+        <h3>Match hands <i class="fas fa-handshake"></i></h3>
+        <p>GreenLoop sorts listings by quarter, so nearby matches always show up first.</p>
+      </div>
+      <div class="step">
+        <h3>Connect <i class="fas fa-comment-dots"></i></h3>
+        <p>Reach out directly, agree on pickup, and mark it complete once the waste changes hands.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="impact-preview">
+    <h2>What's happened so far</h2>
+    <div class="stats">
+      <div class="stat">
+        <span id="completed-count">0</span>
+        <p>Matches Completed</p>
+      </div>
+      <div class="stat">
+        <span id="active-count">0</span>
+        <p>Listings Active Right Now</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>GreenLoop &copy; 2026.</p>
+  </footer>
+
+  <script src="./scripts/data.js"></script>
+  <script src="./scripts/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post a Listing - GreenLoop</title>
+  <link rel="stylesheet" href="../styles/post.css">
+</head>
+ <nav class="navbar">
+    <div class="logo"><img src="../Assets/leaf icon.png" alt="leaf">Green<span>Loop</span></div>
+    <div class="nav-links">
+       <a class="back-link" href="dashboard.html">&larr; Back to dashboard</a>
+    </div>
+  </nav>
+<body>
+
+
+  <main class="form-wrap">
+    <h1 id="page-title">Post a Listing</h1>
+
+    <form id="post-form">
+      <label for="waste-type" id="waste-type-label">Waste type</label>
+      <select id="waste-type" required>
+        <option value="" disabled selected>Select a type</option>
+        <option value="Vegetable peels">Vegetable peels</option>
+        <option value="Food scraps">Food scraps</option>
+        <option value="Market refuse">Market refuse</option>
+        <option value="Mixed organic waste">Mixed organic waste</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <label id="quantity-label">Quantity</label>
+      <div class="quantity-choice">
+        <label class="quantity-option">
+          <input type="radio" name="quantity" value="Small bag">
+          <span>Small bag</span>
+        </label>
+        <label class="quantity-option">
+          <input type="radio" name="quantity" value="Medium bin">
+          <span>Medium bin</span>
+        </label>
+        <label class="quantity-option">
+          <input type="radio" name="quantity" value="Large load">
+          <span>Large load</span>
+        </label>
+      </div>
+
+      <label for="quarter">Quarter</label>
+      <select id="quarter" required>
+        <option value="" disabled>Select your quarter</option>
+      </select>
+
+      <label for="price" id="price-label">Price (leave blank if free)</label>
+      <input type="number" id="price" min="0" placeholder="e.g. 500">
+
+      <button type="submit" class="btn btn-primary">Post</button>
+    </form>
+  </main>
+
+  <script src="../scripts/data.js"></script>
+  <script src="../scripts/post.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign up - GreenLoop</title>
+  <link rel="stylesheet" href="../styles/signup.css">
+</head>
+<nav class="navbar">
+    <div class="logo"><img src="../Assets/leaf icon.png" alt="leaf">Green<span>Loop</span></div>
+    <a class="back-link" href="../index.html">&larr; Back to home</a>
+
+</nav>
+
+<body>
+  <main class="form-wrap">
+    <h1>Join Green<span>Loop</span></h1>
+    <p class="subtitle">Tell us a little about you, this takes less than a minute.</p>
+
+    <form id="signup-form">
+      <label for="name">Your name</label>
+      <input type="text" id="name" required placeholder="e.g. Mbah Fransis">
+
+      <label>I am a</label>
+      <div class="role-choice">
+        <label class="role-option">
+          <input type="radio" name="role" value="provider" id="role-provider">
+          <span>Waste provider</span>
+        </label>
+        <label class="role-option">
+          <input type="radio" name="role" value="farmer" id="role-farmer">
+          <span>Farmer / composter</span>
+        </label>
+      </div>
+
+      <label for="quarter">Your quarter</label>
+      <select id="quarter" required>
+        <option value="" disabled selected>Select your quarter</option>
+      </select>
+
+      <label for="contact">Phone or WhatsApp number</label>
+      <input type="tel" id="contact" required placeholder="e.g. 6XX XXX XXX">
+
+      <button type="submit" class="btn btn-primary">Create account</button>
+
+    </form>
+  </main>
+  <script src="../scripts/data.js"></script>
+  <script src="../scripts/signup.js"></script>
+  </body>

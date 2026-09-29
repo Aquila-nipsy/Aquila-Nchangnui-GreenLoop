@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Impact Stats - GreenLoop</title>
+  <link rel="stylesheet" href="../styles/impact.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo"><img src="../Assets/leaf icon.png" alt="leaf">Green<span>Loop</span></div>
+    <div class="nav-links">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="browse.html">Browse & Match</a>
+    </div>
+  </nav>
+
+  <main class="impact-wrap">
+    <h1>Impact Stats</h1>
+    <p class="subtitle">A look at what GreenLoop has helped divert so far.</p>
+
+    <section class="stats-grid">
+      <div class="stat-card">
+        <span id="total-completed">0</span>
+        <p>matches completed</p>
+      </div>
+      <div class="stat-card">
+        <span id="total-active">0</span>
+        <p>listings active now</p>
+      </div>
+      <div class="stat-card">
+        <span id="total-users">0</span>
+        <p>people on GreenLoop</p>
+      </div>
+    </section>
+
+    <section class="quarter-section">
+      <h2>Most active quarters</h2>
+      <div id="quarter-breakdown" class="quarter-list">
+        <p class="empty-state">No listings yet.</p>
+      </div>
+    </section>
+
+    <section class="personal-section">
+      <h2>Your personal impact</h2>
+      </section>
+      </main>
+      </body>
+      <script src="../scripts/data.js"></script>
+      <script src="../scripts/impact.js"></script>
+      </html>

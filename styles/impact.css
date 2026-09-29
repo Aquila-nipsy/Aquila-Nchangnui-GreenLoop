@@ -1,0 +1,141 @@
+:root {
+  --bg: #F5F3ED;
+  --text: #3E2C23;
+  --primary: #3F7D45;
+  --secondary: rgb(255, 145, 0);
+  --warning: #D98E3F;
+  --allwhite: #FFFFFF;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  background-color: white;
+  border-bottom: 1px solid #e0ddd3;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: var(--primary);
+}
+.logo img {
+  width: 30px;
+  height: 30px;
+  margin-right: 0.5rem;
+}
+span {
+  color: var(--secondary);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.impact-wrap {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  margin: 50px;
+  background-color: var(--allwhite);
+  border-radius: 15px;
+}
+
+.impact-wrap h1 {
+  color: var(--primary);
+}
+
+.subtitle {
+  margin: 0.3rem 0 2rem;
+  color: #6b6459;
+  font-size: 0.95rem;
+}
+
+.stats-grid {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+}
+
+.stat-card {
+  flex: 1;
+  min-width: 150px;
+  border-radius: 8px;
+  padding: 1.2rem;
+  text-align: center;
+  box-shadow: 0 0 1px var(--secondary);
+}
+.stat-card:hover{
+  box-shadow: 0 0 5px var(--secondary);
+  transform: translateY(-30px);
+  transition: all 0.3s ease-in-out;
+}
+
+.stat-card span {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary);
+  display: block;
+}
+
+.stat-card p {
+  font-size: 0.85rem;
+  color: #6b6459;
+  margin-top: 0.3rem;
+}
+
+.quarter-section, .personal-section {
+  margin-bottom: 2.5rem;
+}
+
+.quarter-section h2, .personal-section h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+}
+
+.quarter-row {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border: 1px solid #e0ddd3;
+  padding: 0.7rem 1rem;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.personal-section p {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.empty-state {
+  color: #8a8375;
+  font-size: 0.9rem;
+}
