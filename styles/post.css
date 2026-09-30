@@ -131,3 +131,9 @@ input:focus, select:focus {
   background-color: var(--primary);
   color: white;
 }
+@media (max-width: 700px) {
+  .navbar {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+}

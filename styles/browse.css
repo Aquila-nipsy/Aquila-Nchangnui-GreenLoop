@@ -140,3 +140,9 @@ span {
   color: #8a8375;
   font-size: 0.9rem;
 }
+@media (max-width: 700px) {
+  .navbar {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+}
